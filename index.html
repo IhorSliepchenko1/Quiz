@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="body">
+        <p class="body__num-question">
+          Question <span id="current"></span> of <span id="total"></span>
+        </p>
+        <hr />
+        <section class="options-section">
+          <p class="body__question" id="question"></p>
+          <div class="body__options" id="listItem"></div>
+        </section>
+        <button class="body__btn" id="btn" value="1">Next</button>
+        <button class="body__btn" id="start">Start over</button>
+      </div>
+      <div class="wrapper__circle" id="listCircle"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
